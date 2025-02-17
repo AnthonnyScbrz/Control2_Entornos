@@ -47,4 +47,19 @@ public class Output {
     public static void valueRequest(){
         System.out.println("Ingrese el número de operación a realizar: ");
     }
+    public static void studentEmpty(){
+        System.out.println("No se encontró estudiante");
+    }
+    public static void tableHeader(){
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------");
+        System.out.printf("| %-2s | %-20s | %-20s | %-2s | %-20s | %-2s |\n","ID","Nombre completo","Primera Asignatura","(nota)","Segunda Asignatura","(nota)");
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------");
+
+    }
+    public static void tableBody(int id, String nombreCompleto, String Primera_Asignatura, int nota1, String Segunda_Asignatura, int nota2) {
+        System.out.printf("| %-2s | %-20s | %-20s | %-2s | %-20s | %-2s |\n", id, nombreCompleto, Primera_Asignatura, nota1, Segunda_Asignatura, nota2);
+    }
+    public static void tableEnds() {
+        System.out.println("------------------------------------------------------------------------------------------------------------------------");
+    }
 }
